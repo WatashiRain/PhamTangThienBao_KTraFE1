@@ -1,0 +1,608 @@
+﻿<style>
+    #gioHang {
+        background-color: #f4f4f4;
+    }
+    #container{
+        width:1800px;
+        height:100px;
+    }
+        #top {
+        }
+            #div-left {
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+
+            #div-mid {
+                width: 1000px;
+                height: 100px;
+                float: inline-start;
+            }
+
+            #div-right {
+                width: 410px;
+                height: 100px;
+                float: right;
+                color: #000000;
+            }
+                #black{
+                    color:black;
+                }
+    #gray {
+        color: #b1b1b1;
+    }
+    body{
+        margin:0;
+        padding:0px;
+    }
+    header{
+        display:flex;
+        flex-direction:row;
+        height:100px;
+        width:auto;
+    }
+    #logo{
+        margin:10px 0 0 10px;
+        height:100px;
+        width:100px;
+    }
+    #timkiem{
+        color:darkblue;
+    }
+    section{
+        height:1000px;
+        width:auto;
+    }
+    #bigContainLeft {
+        float:left;
+        width:1086px;
+        height:1000px;
+    }
+    #bigContainRight {
+        margin:0 0 0 20px;
+        float:inline-start;
+        width:400px;
+        height:1000px;
+    }
+        #tamTinh {
+            background-color:white;
+            margin: 10px 0 0 0;
+            display:flex;
+            width:330px;
+            height:60px;
+            color:gray;
+            align-items:center;
+        }
+            #tamtinhLeft {
+                background-color: white;
+                margin: 10px 0 0 0;
+                display: flex;
+                width: 200px;
+                height: 50px;
+                color: gray;
+                float:left;
+            }
+            #tamtinhRight {
+                background-color: white;
+                margin: 10px 0 0 0;
+                width: 130px;
+                height: 50px;
+                float:inline-end;
+            }
+
+        #tongTien {
+            margin:5px 0 0 0;
+            background-color:white;
+            width:330px;
+            height:95px;
+            color:gray;
+        }
+            #tongtienLeft {
+                margin:5px 0 0 0;
+                width:190px;
+                height:60px;
+                color:gray;
+                float:left;
+            }
+            #tongtienRight {
+                margin: 5px 0 0 0;
+                width: 130px;
+                height: 60px;
+                float: inline-start;
+            }
+            #belowtongTien{
+                display:flex;
+                margin:0 0 0 10px;
+                width:330px;
+                height:70px;
+            }
+        #KMai{
+            width:330px;
+            height:170px;
+            background-color:white;
+        }
+            #helpMe{
+                width:330px;
+                height:30px;
+                margin: 10px;
+            }
+                #belowKM1{
+                    width:100px;
+                    height:150px;
+                    align-items:center;
+                }
+            #helpMe2{
+                width:330px;
+                height:150px;
+            }
+                        #zaloPay {
+                            margin: 0 0 0 10px;
+                            width: 50px;
+                            height: 50px;
+                            float: left;
+                        }
+                        #namMuoi{
+                            width:175px;
+                            height:50px;
+                            align-content:center;
+                            float:inline-start;
+                        }
+            #apDungbig {
+                color: dodgerblue;
+                height:50px;
+                width: 90px;
+                align-content: center;
+                float: inline-start;
+            }
+                            #apDung {
+                                background-color:blue;
+                                color:white;
+                                align-content:center;
+                            }
+                        #chonKM{
+                            height:85px;
+                            width:330px;
+                            align-content:center;
+                            color:dodgerblue;
+                        }
+            #FinalRight{
+                display:flex;
+                align-items:center;
+                font-size:22px;
+                background-color:red;
+                color:white;
+                margin: 10px 0 0 0;
+                height:60px;
+                width:330px;
+            }
+    #bgGray {
+        background-color: #f4f4f4;
+    }
+    #bgWhite {
+        background-color: white;
+    }
+    .trai {
+        align-content:center;
+        margin: 0 0 0 10px;
+    }
+    #giadungViet {
+        background-color:white;
+        width: 450px;
+        height: 170px;
+        float:left;
+        
+    }
+        #shopKM{
+            margin: 3px 10px 10px 10px;
+            height:50px;
+            width:1075px;
+            display:flex;
+            background-color:white;
+            align-items:center;
+        }
+    #tikiTrading{
+
+        width:450px;
+        height: 170px;
+        background-color:white;
+        margin: 0 0 0 10px;
+        float:left;
+    }
+    #hackNao {
+        background-color:yellow;
+        height:5px;
+        color: #f4f4f4;
+    }
+        #shopKM2 {
+            margin: 184px 0 0 10px;
+            height: 50px;
+            width: 1075px;
+            background-color: white;
+            align-items: center;
+            display:flex;
+            color:black;
+        }
+    #tikiTradingright{
+        background-color:white;
+        width:625px;
+        height:170px;
+        float:inline-start;
+    }
+        #dg2 {
+            width: 170px;
+            height: 165px;
+            float: left;
+            align-content: center;
+        }
+
+        #sl2 {
+            width: 210px;
+            height: 185px;
+            float: inline-start;
+            align-content: center;
+        }
+
+        #tt2 {
+            width: 240px;
+            height: 170px;
+            float: inline-start;
+            align-content: center;
+            color: red;
+        }
+
+        #front2 {
+            width: 100px;
+            height: 170px;
+            float: left;
+            align-content: center;
+        }
+
+        #back2 {
+            width: 50px;
+            height: 170px;
+            float: inline-start;
+            margin: 70px 0 0 0;
+        }
+        #behindback2 {
+            margin: 0 0 0 30px;
+            display: flex;
+            width: 50px;
+            height: 170px;
+            float: inline-start;
+            align-items: center;
+        }
+    #containMid{
+        background-color:white;
+        width:625px;
+        height:170px;
+        float:inline-start;
+        
+    }
+    #containMid2 {
+        background-color: white;
+        width: 625px;
+        height: 170px;
+        float: inline-start;
+    }
+
+        #dg{
+            width:170px;
+            height:165px;
+            float:left;
+            align-content:center;
+        }
+        #sl{
+            width:210px;
+            height:185px;
+            float:inline-start;
+            align-content:center;
+        }
+        #tt{
+            width:240px;
+            height:170px;
+            float:inline-start;
+            align-content:center;
+            color:red;
+        }
+            #front {
+                width: 100px;
+                height: 170px;
+                float: left;
+                align-content: center;
+            }
+            #back{
+                width:50px;
+                height:170px;
+                float:inline-start;
+                margin:70px 0 0 0;
+            }
+            #behindback{
+                margin:0 0 0 30px;
+                display:flex;
+                width:50px;
+                height:170px;
+                float:inline-start;
+                align-items:center;
+            }
+        #sizeiconHouse{
+            height:30px;
+            width:30px;
+        }
+        #checkBox{
+            float:left;
+            width:20px;
+            height:20px;
+        }
+        #behindcheckBox{
+            float:inline-start;
+            width:180px;
+            height:150px;
+        }
+        #SpacegdViet{
+            display:flex;
+            width: 400px;
+            height:275px;
+        }
+        #LamOn{
+            align-items:center;
+            height:130px;
+            display:flex;
+        }
+            #f{
+                float:left;
+                align-content:center;
+                display:flex;
+            }
+        #sizeItem1 {
+            background-color: white;
+            height: 130px;
+            width: 100px;
+            float:inline-start;
+        }
+        #BsizeItem1{
+            align-items:center;
+            height:100px;
+            width:300px;
+            float:inline-start;
+            display:flex;
+        }
+</style>
+<!DOCTYPE html>
+@RenderBody()
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script language="JavaScript">function Calculate() {
+        var dg = 8480000;
+        var sl = parseFloat(document.getElementById("soluong").value);
+        if (sl < 1 || sl > 10);
+        else
+            window.document.getElementById("total").value = dg * sl;
+    }
+
+    function Calculate2() {
+        var dg2 = 8990000;
+        var sl2 = parseFloat(document.getElementById("soluong2").value);
+        if (sl2 < 1 || sl2 > 10);
+        else
+            window.document.getElementById("total2").value = dg2 * sl2;
+    }
+    </script>
+    <script language="JavaScript">
+        {
+            function CongTruButton() {
+                var cong = 1;
+                var tru = -1;
+                if (document.getElementById(cong).onclick)
+                    document.getElementById("soluong").value = sl + cong;
+                else document.getElementById("soluong").value = sl + tru;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header id="container">
+        <div id="top">
+            <div id="div-left">
+                <img src="~/Content/Logo/tikilogo.PNG" id="logo" />
+            </div>
+
+            <div id="div-mid">
+                <table>
+                    <ul>
+                        <form class="example" action="action_page.php">
+
+                            <input type="text" placeholder="Giao nhanh 2H & đúng khung giờ" name="search" size="110">
+                            <button type="submit" id="timkiem">Tìm kiếm</button>
+
+                        </form>
+                    </ul>
+                    <ul>
+                    <h4 id="gray">
+                        khỏe đẹp &nbsp; nhà cửa &nbsp; sách &nbsp;  thể thao &nbsp;  trái cây &nbsp; thịt, trứng &nbsp; rau củ quả &nbsp;  sữa, bơ, phô mai &nbsp;  hải sản &nbsp; gạo, mì ăn liền
+                    </h4>
+                    </ul>
+                </table>
+            </div>
+
+            <div id="div-right"> 
+                <table>
+                    <ul>
+                        <i class="fas fa-home"></i>Trang chủ <!--<a href="~/Controllers/trangchu.cs" id="gray"></a>-->
+                        <i class="fas fa-crown"></i>Astra
+                        <i class="far fa-smile"></i>Tài khoản
+                    </ul>
+                    <ul>
+                        <i class="fas fa-map-marker-alt"></i>&nbsp;Giao đến:&nbsp;<a href="https://www.google.com/maps/search/+Q.12+P.Hi%E1%BB%87p+Th%C3%A0nh,+H%E1%BB%93+Ch%C3%AD+Minh/10.8777418,106.6174622,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" id="black">Q.12 P.Hiệp Thành, Hồ Chí Minh</a>
+                    </ul>
+                </table>
+            </div>
+        </div>
+    </header>
+    <!--Banner-->
+    <section id="gioHang">
+        <div id="gioHangIn">
+            <h1 style="margin:20px 0 20px 20px;">GIỎ HÀNG</h1>
+            <div id="bigContainLeft">
+                <div class="trai" id="contain">
+                    <form id="bgWhite">
+                        <input type="checkbox" id="id_1" name="allSP" value="All San Pham" />
+                        <label for="id_1">Tất cả</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;Đơn giá &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Số lượng &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thành tiền &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i class="far fa-trash-alt"></i>
+                    </form>
+
+                    <div id="giadungViet">
+                        <input type="checkbox" name="Giadungviet" value="giadungviet">
+                        <i class="fas fa-store"></i>&nbsp;GIA DỤNG VIỆT&nbsp;&nbsp;<i class="fas fa-chevron-right"></i>
+                        <div id="SpacegdViet">
+                            <div id="LamOn">
+                                <input type="checkbox" name="sanpham1" value="San Pham 1" id="f" />
+                            </div>
+                            <img src="~/Content/Logo/ShoppingPhoneSamsung.PNG" id="sizeItem1" />
+                            <p id="BsizeItem1">
+                                <b>Điện thoại Samsung Galaxy A54 5G (8GB/128GB) - Hàng chính hãng - Tím</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="containMid">
+                        <div id="dg" value="8480000">
+                            &nbsp;<b>8.480.000<sup><u>đ</u></sup></b>
+                        </div>
+                        <div id="sl" value="1">
+                            <form method="post">
+                                <button id="tru" value="-1">-</button>
+                                <input type="number" id="soluong" name="soluong" min="1" max="10" size="5" style="border:solid #000000;text-align:center;margin:0 0 0 10px;"
+                                       onchange="Calculate();" />
+                                <button id="cong" value="+1">+</button>
+                            </form>
+                        </div>
+                        <div id="tt">
+                            <div id="front">
+                                <b><input type="text" id="total" name="total" style="color:red;text-align:center;border:none;margin:0 0 0 10px;" size="8" /></b>
+                            </div>
+                            <div id="back">
+                                <div>&nbsp;<sup><u>đ</u></sup></div>
+                            </div>
+                            <div id="behindback">
+                                <i class="far fa-trash-alt" style="color:black;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="shopKM">
+                    &nbsp;&nbsp;Shop Khuyến Mãi &nbsp;&nbsp;<i class="fas fa-chevron-down"></i>
+                </div>
+                <div id="tikiTrading">
+                    <input type="checkbox" name="tikiTrading" value="tikitrading">
+                    <i class="fas fa-store"></i>&nbsp;Tiki Trading
+                    <div id="SpacegdViet">
+                        <div id="LamOn">
+                            <input type="checkbox" name="sanpham2" value="San Pham 2" id="f" />
+                        </div>
+                        <img src="~/Content/Logo/ShoppingPhoneSamsung.PNG" id="sizeItem1" />
+                        <p id="BsizeItem1">
+                            <b>Điện thoại Samsung Galaxy A54 5G (8GB/256GB) - Hàng chính hãng - Tím</b>
+                        </p>
+                    </div>
+                </div>
+                <div id="containMid2">
+                    <div id="tikiTradingright">
+                        <div id="dg2" value="8990000">
+                            <b>8.990.000<sup><u>đ</u></sup></b>
+                        </div>
+
+                        <div id="sl2" value="1">
+                            <form method="post">
+                                <button id="tru" value="-1">-</button>
+                                <input type="number" id="soluong2" name="soluong2" min="1" max="10" size="5" style="border:solid #000000;text-align:center;margin:0 0 0 10px;"
+                                       onchange="Calculate2();" />
+                                <button id="cong" value="+1">+</button>
+                            </form>
+                        </div>
+
+                        <div id="tt2">
+                            <div id="front2">
+                                <b><input type="text" id="total2" name="total2" style="color:red;text-align:center;border:none;margin:0 0 0 10px;" size="8" /></b>
+                            </div>
+                            <div id="back2">
+                                <div>&nbsp;<sup><u>đ</u></sup></div>
+                            </div>
+                            <div id="behindback2">
+                                <i class="far fa-trash-alt" style="color:black;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="shopKM2">
+                    &nbsp;&nbsp;Shop Khuyến Mãi &nbsp;&nbsp; <div style="color:#9f9f9f;">Vui lòng chọn sản phẩm trước</div>
+                </div>
+                </div>
+            </div>
+            <div id="bigContainRight">
+                <div id="KMai">
+                    <div id="helpMe">
+                        <b id="belowKM1">Tiki khuyến mãi<b id="gray"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Có thể chọn 2 <i class="fas fa-info-circle"></i></b></b>
+                    </div>
+                    <div id="helpMe2">
+                        <div id="belowKM2">
+                            <img src="~/Content/Logo/zalopay.PNG" id="zaloPay" />
+                            <div id="namMuoi">
+                                <b>&nbsp;&nbsp;&nbsp;&nbsp;Giảm 50k</b>
+                            </div>
+                            <div id="apDungbig">
+                                <i class="fas fa-info-circle">&nbsp;</i><button type="submit" id="apDung">Áp Dụng</button>
+                            </div>
+                        </div>
+                        <div id="chonKM">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-ticket-alt"></i> &nbsp; Chọn hoặc nhập Khuyến mãi khác
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tamTinh">
+                    <div id="tamtinhLeft">
+                        &nbsp;&nbsp;Tạm tính
+                    </div>
+                    <div id="tamtinhRight">
+                        <div style="color:black;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.480.000<sup><u>đ</u></sup>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tongTien">
+                    <div id="tongtienLeft">
+                        <div style="color:white;">
+                            hehehehe
+                        </div>
+                        <div>
+                            &nbsp;&nbsp;Tổng tiền
+                        </div>
+                    </div>
+                    <div id="tongtienRight">
+                        <div style="color:red;font-size:23px;margin:5px 0 0 0;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;8.840.000<sup><u>đ</u></sup>
+                        </div>
+                        <div style="color:gray;font-size:10px;text-align:center;">
+                            (Đã bao gồm VAT nếu có)
+                        </div>
+                    </div>
+                    <div id="belowtongTien">
+                        <div>
+                            <b><i style="color:blue;font-size:20px;">FREESHIP</i></b>&nbsp;đã được áp dụng!
+                        </div>
+                    </div>
+                </div>
+                <div id="FinalRight">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Mua hàng (1)</b>
+                </div>
+            </div>
+</section>
+</body>
+</html>
